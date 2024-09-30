@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+</head>
+<body class="has-background-black-ter">
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <p class="card-header-title">Score Keeper</p>
+                    <div class="card-image">
+                        <figure >
+                            <img src="image-score.png" alt="table tennis table">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="subtitle is-5">Use the buttons below to keep score.</p>
+                    <label for="playTo" class="label is-large is-inline">Playing to:   </label>
+                        <div class="select">
+                        <select name="" id="playTo">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Button" class="button card-footer-item">+1 Player 1</button>
+                        <button id="p2Button" class="button card-footer-item">+1 Player 2</button>
+                        <button id="reset" class="button card-footer-item">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
